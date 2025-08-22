@@ -37,6 +37,19 @@
   }
 }
 
+media (max-width:480px)
+{
+    .top-container{
+
+    width:470px;
+  }
+
+  .details-section{
+
+    width: 470px;
+  }
+}
+
 
 
 @media (min-width:1100px)
