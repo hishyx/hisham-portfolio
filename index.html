@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hisham Valiyapeediakkal | Backend-Focused Full-Stack Developer</title>
+    <meta name="description"
+        content="Building real-world web applications using Node.js, Express, and MongoDB. Professional portfolio of Hisham Valiyapeediakkal.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: 'var(--background)',
+                        foreground: 'var(--foreground)',
+                        card: 'var(--card)',
+                        'card-foreground': 'var(--card-foreground)',
+                        popover: 'var(--popover)',
+                        'popover-foreground': 'var(--popover-foreground)',
+                        primary: 'var(--primary)',
+                        'primary-foreground': 'var(--primary-foreground)',
+                        secondary: 'var(--secondary)',
+                        'secondary-foreground': 'var(--secondary-foreground)',
+                        muted: 'var(--muted)',
+                        'muted-foreground': 'var(--muted-foreground)',
+                        accent: 'var(--accent)',
+                        'accent-foreground': 'var(--accent-foreground)',
+                        destructive: 'var(--destructive)',
+                        'destructive-foreground': 'var(--destructive-foreground)',
+                        border: 'var(--border)',
+                        input: 'var(--input)',
+                        ring: 'var(--ring)',
+                    },
+                    borderRadius: {
+                        lg: 'var(--radius)',
+                        md: 'calc(var(--radius) - 2px)',
+                        sm: 'calc(var(--radius) - 4px)',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="antialiased font-sans">
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent border-b border-white/0">
+        <div class="container py-4 flex items-center justify-between">
+            <a href="#hero"
+                class="text-xl font-bold tracking-tight text-foreground hover:opacity-80 transition-opacity">
+                Hisham Valiyapeediakkal
+            </a>
+
+            <div class="flex items-center gap-10">
+                <div class="hidden sm:flex items-center gap-8">
+                    <a href="#about"
+                        class="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors uppercase tracking-widest text-[10px]">About</a>
+                    <a href="#projects"
+                        class="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors uppercase tracking-widest text-[10px]">Work</a>
+                    <a href="#engineering"
+                        class="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors uppercase tracking-widest text-[10px]">Approach</a>
+                    <a href="#contact"
+                        class="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors uppercase tracking-widest text-[10px]">Contact</a>
+                </div>
+
+                <a href="https://github.com/hishyx" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-secondary text-foreground hover:bg-primary transition-all hover:scale-105">
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero"
+            class="min-h-screen flex flex-col items-center justify-center pt-20 pb-12 relative overflow-hidden">
+            <!-- Subtle background decorative element -->
+            <div
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-4xl max-h-[40rem] bg-primary/5 blur-[120px] rounded-full -z-10">
+            </div>
+
+            <div class="container text-center space-y-10 fade-up">
+                <div class="space-y-6">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-widest">
+                        Available for Opportunities
+                    </div>
+                    <h1 class="text-5xl sm:text-7xl font-extrabold leading-[1.1] tracking-tighter text-balance">
+                        Hisham <br class="sm:hidden"> Valiyapeediakkal
+                    </h1>
+                    <p class="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed text-pretty">
+                        Backend-Focused Full-Stack Developer <br class="hidden sm:block"> building real-world web
+                        applications using Node.js, Express, and MongoDB.
+                    </p>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                    <a href="#projects"
+                        class="w-full sm:w-auto px-10 py-4 bg-foreground text-background rounded-full font-semibold hover:opacity-90 transition-all hover:scale-105 text-center">
+                        View Projects
+                    </a>
+                    <a href="https://github.com/hishyx" target="_blank" rel="noopener noreferrer"
+                        class="w-full sm:w-auto px-10 py-4 border border-border bg-card/50 backdrop-blur rounded-full font-semibold text-foreground hover:bg-secondary transition-all hover:scale-105 text-center">
+                        GitHub Profile
+                    </a>
+                </div>
+
+                <div class="pt-12">
+                    <a href="#about"
+                        class="inline-flex flex-col items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+                        <span class="text-[10px] font-bold uppercase tracking-widest">Scroll to explore</span>
+                        <i data-lucide="chevron-down" class="w-4 h-4 animate-bounce"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-32 bg-card/20 border-y border-border/50 overflow-hidden">
+            <div class="container fade-up">
+                <div class="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-16 items-start">
+                    <div class="space-y-4">
+                        <div class="w-12 h-1 bg-primary rounded-full"></div>
+                        <h2 class="text-3xl font-bold tracking-tight">About</h2>
+                        <p class="text-muted-foreground">Engineering philosophy and approach</p>
+                    </div>
+
+                    <div class="space-y-8 text-lg leading-relaxed text-muted-foreground">
+                        <p>
+                            I'm a backend-focused full-stack developer trained at Brocamp. My engineering approach
+                            centers on understanding problems deeply before writing code—I believe strong architectural
+                            decisions upstream prevent countless headaches downstream.
+                        </p>
+                        <p>
+                            My philosophy: <span class="text-foreground font-semibold">build → break → fix →
+                                improve</span>. Rather than following tutorials, I learn by designing real systems,
+                            encountering failures, and iterating on solutions.
+                        </p>
+                        <p>
+                            What excites me is the intersection of backend logic and user experience—designing intuitive
+                            APIs, databases that scale gracefully, and systems that don't require constant firefighting.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-32">
+            <div class="container space-y-20 fade-up">
+                <div class="text-center space-y-4">
+                    <h2 class="text-4xl font-bold tracking-tight">Skills & Tech Stack</h2>
+                    <p class="text-muted-foreground text-lg max-w-xl mx-auto">Focused on robust backend engineering and
+                        efficient development tools.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Backend -->
+                    <div class="p-8 rounded-2xl border border-border bg-card/50 hover-lift space-y-6">
+                        <div class="p-3 w-fit rounded-xl bg-primary/10 text-primary">
+                            <i data-lucide="server" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Backend</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">Node.js</li>
+                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">Express.js
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">REST APIs</li>
+                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">MVC
+                                Architecture</li>
+                        </ul>
+                    </div>
+
+                    <!-- Frontend -->
+                    <div class="p-8 rounded-2xl border border-border bg-card/50 hover-lift space-y-6">
+                        <div class="p-3 w-fit rounded-xl bg-primary/10 text-primary">
+                            <i data-lucide="layout" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Frontend</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">HTML5 & CSS3
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">JavaScript
+                                (ES6+)</li>
+                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">EJS &
+                                Handlebars (HBS)</li>
+                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">Bootstrap</li>
+                        </ul>
+                    </div>
+
+                    <!-- Database & Programming -->
+                    <div class="p-8 rounded-2xl border border-border bg-card/50 hover-lift space-y-6">
+                        <div class="p-3 w-fit rounded-xl bg-primary/10 text-primary">
+                            <i data-lucide="database" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Foundation</h3>
+                        <ul class="space-y-3">
+                            <li
+                                class="flex items-center gap-3 text-sm text-muted-foreground font-medium font-bold text-foreground/80">
+                                MongoDB</li>
+                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">JavaScript OOP
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">C++</li>
+                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">C (Basics)
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="p-8 rounded-2xl border border-border bg-card/50 hover-lift space-y-6">
+                        <div class="p-3 w-fit rounded-xl bg-primary/10 text-primary">
+                            <i data-lucide="settings" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Tools</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">Git & GitHub
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">Postman</li>
+                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">VS Code</li>
+                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">CLI</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-32 bg-card/20 border-y border-border/50">
+            <div class="container space-y-20 fade-up">
+                <div class="space-y-4">
+                    <h2 class="text-4xl font-bold tracking-tight">Featured Projects</h2>
+                    <p class="text-muted-foreground text-lg">Production-grade systems and technical implementation.</p>
+                </div>
+
+                <div class="grid grid-cols-1 gap-8">
+                    <div
+                        class="group relative p-1 rounded-2xl bg-gradient-to-br from-border to-transparent hover:from-primary/20 transition-all duration-500">
+                        <div class="rounded-2xl bg-background p-10 space-y-8 h-full">
+                            <div class="flex flex-col md:flex-row justify-between gap-8">
+                                <div class="space-y-4 max-w-xl">
+                                    <div class="flex items-center gap-3">
+                                        <h3
+                                            class="text-2xl sm:text-3xl font-bold group-hover:text-primary transition-colors">
+                                            E-Commerce Ecosystem</h3>
+                                        <span
+                                            class="px-2 py-0.5 rounded text-[10px] font-bold bg-primary/10 text-primary uppercase tracking-widest leading-none flex items-center">Production</span>
+                                    </div>
+                                    <p class="text-muted-foreground text-lg leading-relaxed">
+                                        A full-featured e-commerce platform built for scale. Handles complete user
+                                        lifecycle management, complex product variants, and real-time order tracking.
+                                    </p>
+                                </div>
+
+                                <div class="flex flex-row md:flex-col gap-3">
+                                    <a href="https://github.com/hishyx/logiafun-ecommerce" target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="flex items-center gap-2 px-6 py-3 rounded-xl border border-border bg-card/50 hover:bg-secondary transition-all text-sm font-semibold">
+                                        <i data-lucide="github" class="w-4 h-4"></i> Source
+                                    </a>
+                                    <a href="#"
+                                        class="flex items-center gap-2 px-6 py-3 rounded-xl bg-foreground text-background transition-all text-sm font-semibold">
+                                        <i data-lucide="external-link" class="w-4 h-4"></i> Live Demo
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-12 pt-8 border-t border-border/50">
+                                <div class="space-y-4">
+                                    <p class="text-xs font-bold text-foreground uppercase tracking-[0.2em]">Core
+                                        Functionality</p>
+                                    <ul class="space-y-3">
+                                        <li class="flex items-start gap-3 text-sm text-muted-foreground">
+                                            <i data-lucide="check-circle-2"
+                                                class="w-4 h-4 text-primary mt-0.5 flex-shrink-0"></i>
+                                            OTP & OAuth secure session management
+                                        </li>
+                                        <li class="flex items-start gap-3 text-sm text-muted-foreground">
+                                            <i data-lucide="check-circle-2"
+                                                class="w-4 h-4 text-primary mt-0.5 flex-shrink-0"></i>
+                                            Advanced Inventory & Variant Control
+                                        </li>
+                                        <li class="flex items-start gap-3 text-sm text-muted-foreground">
+                                            <i data-lucide="check-circle-2"
+                                                class="w-4 h-4 text-primary mt-0.5 flex-shrink-0"></i>
+                                            Real-world Payment Gateway Integration
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="space-y-4">
+                                    <p class="text-xs font-bold text-foreground uppercase tracking-[0.2em]">Architecture
+                                    </p>
+                                    <p class="text-sm text-muted-foreground font-medium italic text-balance">MVC Pattern
+                                        | RESTful Design | 50+ Specialized API Endpoints</p>
+                                    <div class="flex flex-wrap gap-2 pt-2">
+                                        <span
+                                            class="px-3 py-1 rounded-lg text-[11px] font-bold bg-secondary text-secondary-foreground border border-border">NODE.JS</span>
+                                        <span
+                                            class="px-3 py-1 rounded-lg text-[11px] font-bold bg-secondary text-secondary-foreground border border-border">EXPRESS</span>
+                                        <span
+                                            class="px-3 py-1 rounded-lg text-[11px] font-bold bg-secondary text-secondary-foreground border border-border">MONGODB</span>
+                                        <span
+                                            class="px-3 py-1 rounded-lg text-[11px] font-bold bg-secondary text-secondary-foreground border border-border">JWT</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col sm:flex-row items-center justify-between gap-6 pt-8 border-t border-border/50">
+                    <p class="text-sm text-muted-foreground italic text-center sm:text-left">Currently building systems
+                        that prioritize data integrity and performance.</p>
+                    <a href="https://github.com/hishyx"
+                        class="text-sm font-bold text-primary hover:underline transition-all underline-offset-4 whitespace-nowrap">Explore
+                        More on GitHub →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Architecture Section -->
+        <section id="architecture" class="py-32">
+            <div class="container space-y-20 fade-up">
+                <div class="space-y-4 text-center">
+                    <h2 class="text-4xl font-bold tracking-tight">System Architecture</h2>
+                    <p class="text-muted-foreground text-lg max-w-xl mx-auto">A structured 6-layer design for
+                        professional, maintainable growth.</p>
+                </div>
+
+                <div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div
+                        class="p-8 rounded-2xl border border-border bg-card/50 hover:border-primary/50 transition-colors relative group">
+                        <span
+                            class="absolute top-8 right-8 text-4xl font-black text-primary/10 group-hover:text-primary/20 transition-colors">01</span>
+                        <div class="space-y-4 mt-4">
+                            <h3 class="text-xl font-bold">Client Layer</h3>
+                            <p class="text-muted-foreground text-sm leading-relaxed">Responsive frontend handling user
+                                interactions and API communication.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="p-8 rounded-2xl border border-border bg-card/50 hover:border-primary/50 transition-colors relative group">
+                        <span
+                            class="absolute top-8 right-8 text-4xl font-black text-primary/10 group-hover:text-primary/20 transition-colors">02</span>
+                        <div class="space-y-4 mt-4">
+                            <h3 class="text-xl font-bold">Routes & Auth</h3>
+                            <p class="text-muted-foreground text-sm leading-relaxed">Gateway for authentication, rate
+                                limiting, and request validation.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="p-8 rounded-2xl border border-border bg-card/50 hover:border-primary/50 transition-colors relative group">
+                        <span
+                            class="absolute top-8 right-8 text-4xl font-black text-primary/10 group-hover:text-primary/20 transition-colors">03</span>
+                        <div class="space-y-4 mt-4">
+                            <h3 class="text-xl font-bold">Controllers</h3>
+                            <p class="text-muted-foreground text-sm leading-relaxed">Orchestration layer managing flow
+                                between HTTP and Business Logic.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="p-8 rounded-2xl border border-border bg-card/50 hover:border-primary/50 transition-colors relative group">
+                        <span
+                            class="absolute top-8 right-8 text-4xl font-black text-primary/10 group-hover:text-primary/20 transition-colors">04</span>
+                        <div class="space-y-4 mt-4">
+                            <h3 class="text-xl font-bold">Services</h3>
+                            <p class="text-muted-foreground text-sm leading-relaxed">Core business operations, domain
+                                logic, and complex state management.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="p-8 rounded-2xl border border-border bg-card/50 hover:border-primary/50 transition-colors relative group">
+                        <span
+                            class="absolute top-8 right-8 text-4xl font-black text-primary/10 group-hover:text-primary/20 transition-colors">05</span>
+                        <div class="space-y-4 mt-4">
+                            <h3 class="text-xl font-bold">Models</h3>
+                            <p class="text-muted-foreground text-sm leading-relaxed">Schema enforcement and data
+                                validation at the persistence boundary.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="p-8 rounded-2xl border border-border bg-card/50 hover:border-primary/50 transition-colors relative group">
+                        <span
+                            class="absolute top-8 right-8 text-4xl font-black text-primary/10 group-hover:text-primary/20 transition-colors">06</span>
+                        <div class="space-y-4 mt-4">
+                            <h3 class="text-xl font-bold">Persistence</h3>
+                            <p class="text-muted-foreground text-sm leading-relaxed">Optimized data storage strategies
+                                for consistency and scalability.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Engineering Principles -->
+        <section id="engineering" class="py-32 bg-foreground text-background overflow-hidden relative">
+            <div class="container space-y-20 fade-up">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+                    <div class="space-y-12">
+                        <div class="space-y-4">
+                            <h2 class="text-4xl font-bold tracking-tight">Engineering <br> Excellence</h2>
+                            <p class="text-background/60 text-lg">My non-negotiable standards for production software.
+                            </p>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                            <div class="space-y-2">
+                                <h3 class="font-bold text-lg">Validation First</h3>
+                                <p class="text-sm text-background/70">Schemaless is not an excuse for bad data. I
+                                    enforce strict validation at every entry point.</p>
+                            </div>
+                            <div class="space-y-2">
+                                <h3 class="font-bold text-lg">Data Integrity</h3>
+                                <p class="text-sm text-background/70">Handling race conditions and atomicity is standard
+                                    practice, not an afterthought.</p>
+                            </div>
+                            <div class="space-y-2">
+                                <h3 class="font-bold text-lg">Predictable APIs</h3>
+                                <p class="text-sm text-background/70">Consistency in naming, status codes, and error
+                                    structures defines professional work.</p>
+                            </div>
+                            <div class="space-y-2">
+                                <h3 class="font-bold text-lg">Maintainability</h3>
+                                <p class="text-sm text-background/70">I build for the future developer who will maintain
+                                    the code, which is usually future-me.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-10 rounded-3xl bg-background text-foreground border border-border space-y-8">
+                        <h3 class="text-2xl font-bold">Standard Workflow</h3>
+                        <div class="space-y-[2px] bg-border rounded-xl overflow-hidden border border-border">
+                            <div class="p-4 bg-background flex gap-4 hover:bg-secondary transition-colors">
+                                <span class="font-black text-primary/40 leading-none">01</span>
+                                <p class="text-sm font-semibold italic">Deep Requirements Analysis</p>
+                            </div>
+                            <div class="p-4 bg-background flex gap-4 hover:bg-secondary transition-colors">
+                                <span class="font-black text-primary/40 leading-none">02</span>
+                                <p class="text-sm font-semibold italic">Schema & Data Relationship Design</p>
+                            </div>
+                            <div class="p-4 bg-background flex gap-4 hover:bg-secondary transition-colors">
+                                <span class="font-black text-primary/40 leading-none">03</span>
+                                <p class="text-sm font-semibold italic">API Contract Definition (Postman)</p>
+                            </div>
+                            <div class="p-4 bg-background flex gap-4 hover:bg-secondary transition-colors">
+                                <span class="font-black text-primary/40 leading-none">04</span>
+                                <p class="text-sm font-semibold italic">Service-Layer Implementation</p>
+                            </div>
+                            <div class="p-4 bg-background flex gap-4 hover:bg-secondary transition-colors">
+                                <span class="font-black text-primary/40 leading-none">05</span>
+                                <p class="text-sm font-semibold italic">Endpoint Orchestration</p>
+                            </div>
+                            <div class="p-4 bg-background flex gap-4 hover:bg-secondary transition-colors">
+                                <span class="font-black text-primary/40 leading-none">06</span>
+                                <p class="text-sm font-semibold italic">Rigorous Integration Testing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-32">
+            <div class="container space-y-20 fade-up">
+                <div class="max-w-3xl mx-auto text-center space-y-6">
+                    <h2 class="text-4xl font-bold tracking-tight">Get In Touch</h2>
+                    <p class="text-muted-foreground text-lg">Open to opportunities, technical discussions, and
+                        collaborations.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                    <a href="mailto:hishyx.dev@gmail.com"
+                        class="p-8 rounded-2xl border border-border bg-card/50 hover-lift flex flex-col items-center gap-6 text-center group">
+                        <div
+                            class="p-4 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                            <i data-lucide="mail" class="w-6 h-6"></i>
+                        </div>
+                        <div class="space-y-1">
+                            <h3 class="font-bold">Email</h3>
+                            <p class="text-sm text-muted-foreground">hishyx.dev@gmail.com</p>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/hishyx" target="_blank" rel="noopener noreferrer"
+                        class="p-8 rounded-2xl border border-border bg-card/50 hover-lift flex flex-col items-center gap-6 text-center group">
+                        <div
+                            class="p-4 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                            <i data-lucide="github" class="w-6 h-6"></i>
+                        </div>
+                        <div class="space-y-1">
+                            <h3 class="font-bold">GitHub</h3>
+                            <p class="text-sm text-muted-foreground">@hishyx</p>
+                        </div>
+                    </a>
+
+                    <a href="https://in.linkedin.com/in/hishamvaliyapeediakkal" target="_blank"
+                        rel="noopener noreferrer"
+                        class="p-8 rounded-2xl border border-border bg-card/50 hover-lift flex flex-col items-center gap-6 text-center group">
+                        <div
+                            class="p-4 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                            <i data-lucide="linkedin" class="w-6 h-6"></i>
+                        </div>
+                        <div class="space-y-1">
+                            <h3 class="font-bold">LinkedIn</h3>
+                            <p class="text-sm text-muted-foreground">Hisham Valiyapeediakkal</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="max-w-2xl mx-auto pt-10 text-center space-y-10 border-t border-border/50">
+                    <p class="text-muted-foreground leading-relaxed">
+                        Whether you're interested in discussing backend architecture, exploring professional
+                        opportunities, or just want to connect—I'd love to hear from you.
+                    </p>
+                    <a href="mailto:hishyx.dev@gmail.com"
+                        class="inline-flex px-12 py-4 bg-primary text-primary-foreground rounded-full font-bold hover:opacity-90 transition-all hover:scale-105">
+                        Drop me an email
+                    </a>
+                </div>
+            </div>
+
+            <footer class="mt-32 pt-12 pb-8 border-t border-border/50">
+                <div class="container text-center space-y-4">
+                    <p class="text-[10px] font-bold uppercase tracking-[0.3em] text-muted-foreground">Built with
+                        Precision</p>
+                    <p class="text-xs text-muted-foreground/60">© 2024 Hisham Valiyapeediakkal. All rights reserved.</p>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('bg-background/80', 'backdrop-blur-md', 'border-white/10', 'py-3');
+                navbar.classList.remove('bg-transparent', 'border-white/0', 'py-4');
+            } else {
+                navbar.classList.remove('bg-background/80', 'backdrop-blur-md', 'border-white/10', 'py-3');
+                navbar.classList.add('bg-transparent', 'border-white/0', 'py-4');
+            }
+        });
+
+        // Smooth scroll for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').slice(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for fade-up animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>
