@@ -84,39 +84,55 @@
             </div>
 
             <div class="container text-center space-y-10 fade-up">
-                <div class="space-y-6">
-                    <div
-                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-widest">
-                        Available for Opportunities
+                <div class="space-y-4 flex flex-col items-center">
+                    <div class="relative group">
+                        <!-- Enhanced soft shadow and glow -->
+                        <div
+                            class="absolute -inset-6 bg-primary/10 rounded-full blur-3xl opacity-40 group-hover:opacity-60 transition-opacity duration-1000">
+                        </div>
+                        <!-- Subtle gradient ring -->
+                        <div
+                            class="absolute -inset-1 bg-gradient-to-tr from-primary/20 via-transparent to-primary/10 rounded-full opacity-50">
+                        </div>
+
+                        <img src="hisham.jpg" alt="Hisham Valiyapeediakkal"
+                            class="relative w-52 h-52 sm:w-64 sm:h-64 rounded-full object-cover grayscale border-4 border-background shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] transition-transform duration-700 group-hover:scale-[1.02]">
                     </div>
-                    <h1 class="text-5xl sm:text-7xl font-extrabold leading-[1.1] tracking-tighter text-balance">
-                        Hisham <br class="sm:hidden"> Valiyapeediakkal
-                    </h1>
-                    <p class="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed text-pretty">
-                        Backend-Focused Full-Stack Developer <br class="hidden sm:block"> building real-world web
-                        applications using Node.js, Express, and MongoDB.
-                    </p>
-                </div>
 
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-                    <a href="#projects"
-                        class="w-full sm:w-auto px-10 py-4 bg-foreground text-background rounded-full font-semibold hover:opacity-90 transition-all hover:scale-105 text-center">
-                        View Projects
-                    </a>
-                    <a href="https://github.com/hishyx" target="_blank" rel="noopener noreferrer"
-                        class="w-full sm:w-auto px-10 py-4 border border-border bg-card/50 backdrop-blur rounded-full font-semibold text-foreground hover:bg-secondary transition-all hover:scale-105 text-center">
-                        GitHub Profile
-                    </a>
-                </div>
+                    <div class="space-y-4">
+                        <div
+                            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold uppercase tracking-widest">
+                            Available for Opportunities
+                        </div>
+                        <h1 class="text-5xl sm:text-7xl font-extrabold leading-[1.1] tracking-tighter text-balance">
+                            Hisham <br class="sm:hidden"> Valiyapeediakkal
+                        </h1>
+                        <p
+                            class="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed text-pretty">
+                            Backend-Focused Full-Stack Developer <br class="hidden sm:block"> building real-world web
+                            applications using Node.js, Express, and MongoDB.
+                        </p>
+                    </div>
 
-                <div class="pt-12">
-                    <a href="#about"
-                        class="inline-flex flex-col items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
-                        <span class="text-[10px] font-bold uppercase tracking-widest">Scroll to explore</span>
-                        <i data-lucide="chevron-down" class="w-4 h-4 animate-bounce"></i>
-                    </a>
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                        <a href="#projects"
+                            class="w-full sm:w-auto px-10 py-4 bg-foreground text-background rounded-full font-semibold hover:opacity-90 transition-all hover:scale-105 text-center">
+                            View Projects
+                        </a>
+                        <a href="https://github.com/hishyx" target="_blank" rel="noopener noreferrer"
+                            class="w-full sm:w-auto px-10 py-4 border border-border bg-card/50 backdrop-blur rounded-full font-semibold text-foreground hover:bg-secondary transition-all hover:scale-105 text-center">
+                            GitHub Profile
+                        </a>
+                    </div>
+
+                    <div class="pt-12">
+                        <a href="#about"
+                            class="inline-flex flex-col items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+                            <span class="text-[10px] font-bold uppercase tracking-widest">Scroll to explore</span>
+                            <i data-lucide="chevron-down" class="w-4 h-4 animate-bounce"></i>
+                        </a>
+                    </div>
                 </div>
-            </div>
         </section>
 
         <!-- About Section -->
@@ -131,18 +147,19 @@
 
                     <div class="space-y-8 text-lg leading-relaxed text-muted-foreground">
                         <p>
-                            I'm a backend-focused full-stack developer trained at Brocamp. My engineering approach
-                            centers on understanding problems deeply before writing code—I believe strong architectural
-                            decisions upstream prevent countless headaches downstream.
+                            I’m an aspiring backend engineer building full-stack applications with a focus on Node.js
+                            and scalable database design. My engineering approach centers on understanding problems
+                            deeply before writing code—I believe strong architectural decisions prevent technical debt
+                            and ensure long-term reliability.
                         </p>
                         <p>
                             My philosophy: <span class="text-foreground font-semibold">build → break → fix →
-                                improve</span>. Rather than following tutorials, I learn by designing real systems,
-                            encountering failures, and iterating on solutions.
+                                improve</span>. I prioritize learning through hands-on system design, treating every
+                            failure as an opportunity to refine my engineering intuition and implementation strategy.
                         </p>
                         <p>
-                            What excites me is the intersection of backend logic and user experience—designing intuitive
-                            APIs, databases that scale gracefully, and systems that don't require constant firefighting.
+                            I am passionate about designing intuitive APIs, high-integrity data models, and backend
+                            systems that are both performant and maintainable.
                         </p>
                     </div>
                 </div>
@@ -158,70 +175,62 @@
                         efficient development tools.</p>
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <!-- Backend -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Core Expertise -->
                     <div class="p-8 rounded-2xl border border-border bg-card/50 hover-lift space-y-6">
                         <div class="p-3 w-fit rounded-xl bg-primary/10 text-primary">
-                            <i data-lucide="server" class="w-6 h-6"></i>
+                            <i data-lucide="shield-check" class="w-6 h-6"></i>
                         </div>
-                        <h3 class="text-xl font-bold">Backend</h3>
+                        <h3 class="text-xl font-bold">Core Expertise</h3>
                         <ul class="space-y-3">
-                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">Node.js</li>
-                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">Express.js
-                            </li>
-                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">REST APIs</li>
+                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">Node.js &
+                                Express.js</li>
+                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">MongoDB
+                                (NoSQL)</li>
+                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">RESTful API
+                                Design</li>
                             <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">MVC
                                 Architecture</li>
+                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">Session-Based
+                                Authentication</li>
                         </ul>
                     </div>
 
-                    <!-- Frontend -->
+                    <!-- Working Knowledge -->
                     <div class="p-8 rounded-2xl border border-border bg-card/50 hover-lift space-y-6">
                         <div class="p-3 w-fit rounded-xl bg-primary/10 text-primary">
-                            <i data-lucide="layout" class="w-6 h-6"></i>
+                            <i data-lucide="layers" class="w-6 h-6"></i>
                         </div>
-                        <h3 class="text-xl font-bold">Frontend</h3>
+                        <h3 class="text-xl font-bold">Working Knowledge</h3>
                         <ul class="space-y-3">
-                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">HTML5 & CSS3
-                            </li>
                             <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">JavaScript
                                 (ES6+)</li>
-                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">EJS &
-                                Handlebars (HBS)</li>
-                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">Bootstrap</li>
-                        </ul>
-                    </div>
-
-                    <!-- Database & Programming -->
-                    <div class="p-8 rounded-2xl border border-border bg-card/50 hover-lift space-y-6">
-                        <div class="p-3 w-fit rounded-xl bg-primary/10 text-primary">
-                            <i data-lucide="database" class="w-6 h-6"></i>
-                        </div>
-                        <h3 class="text-xl font-bold">Foundation</h3>
-                        <ul class="space-y-3">
-                            <li
-                                class="flex items-center gap-3 text-sm text-muted-foreground font-medium font-bold text-foreground/80">
-                                MongoDB</li>
-                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">JavaScript OOP
+                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">HTML5 & CSS3
                             </li>
-                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">C++</li>
-                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">C (Basics)
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Tools -->
-                    <div class="p-8 rounded-2xl border border-border bg-card/50 hover-lift space-y-6">
-                        <div class="p-3 w-fit rounded-xl bg-primary/10 text-primary">
-                            <i data-lucide="settings" class="w-6 h-6"></i>
-                        </div>
-                        <h3 class="text-xl font-bold">Tools</h3>
-                        <ul class="space-y-3">
+                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">Frontend
+                                Template Engines</li>
                             <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">Git & GitHub
-                            </li>
-                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">Postman</li>
-                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">VS Code</li>
-                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">CLI</li>
+                                workflows</li>
+                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">Postman
+                                Testing</li>
+                        </ul>
+                    </div>
+
+                    <!-- Currently Learning -->
+                    <div class="p-8 rounded-2xl border border-border bg-card/50 hover-lift space-y-6">
+                        <div class="p-3 w-fit rounded-xl bg-primary/10 text-primary">
+                            <i data-lucide="trending-up" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Currently Learning</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">System Design
+                                Principles</li>
+                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">AWS & Cloud
+                                Basics</li>
+                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">Redis for
+                                Caching</li>
+                            <li class="flex items-center gap-3 text-sm text-muted-foreground font-medium">Microservices
+                                Basics</li>
                         </ul>
                     </div>
                 </div>
@@ -233,7 +242,7 @@
             <div class="container space-y-20 fade-up">
                 <div class="space-y-4">
                     <h2 class="text-4xl font-bold tracking-tight">Featured Projects</h2>
-                    <p class="text-muted-foreground text-lg">Production-grade systems and technical implementation.</p>
+                    <p class="text-muted-foreground text-lg">Comprehensive systems and technical implementation.</p>
                 </div>
 
                 <div class="grid grid-cols-1 gap-8">
@@ -247,11 +256,13 @@
                                             class="text-2xl sm:text-3xl font-bold group-hover:text-primary transition-colors">
                                             E-Commerce Ecosystem</h3>
                                         <span
-                                            class="px-2 py-0.5 rounded text-[10px] font-bold bg-primary/10 text-primary uppercase tracking-widest leading-none flex items-center">Production</span>
+                                            class="px-2 py-0.5 rounded text-[10px] font-bold bg-primary/10 text-primary uppercase tracking-widest leading-none flex items-center">Actively
+                                            Developing</span>
                                     </div>
                                     <p class="text-muted-foreground text-lg leading-relaxed">
-                                        A full-featured e-commerce platform built for scale. Handles complete user
-                                        lifecycle management, complex product variants, and real-time order tracking.
+                                        A comprehensive e-commerce platform designed with scalability principles.
+                                        Handles the complete user lifecycle, complex product variants, and robust
+                                        inventory management.
                                     </p>
                                 </div>
 
@@ -261,10 +272,10 @@
                                         class="flex items-center gap-2 px-6 py-3 rounded-xl border border-border bg-card/50 hover:bg-secondary transition-all text-sm font-semibold">
                                         <i data-lucide="github" class="w-4 h-4"></i> Source
                                     </a>
-                                    <a href="#"
-                                        class="flex items-center gap-2 px-6 py-3 rounded-xl bg-foreground text-background transition-all text-sm font-semibold">
-                                        <i data-lucide="external-link" class="w-4 h-4"></i> Live Demo
-                                    </a>
+                                    <button disabled
+                                        class="flex items-center gap-2 px-6 py-3 rounded-xl bg-muted text-muted-foreground transition-all text-sm font-semibold cursor-not-allowed opacity-70">
+                                        <i data-lucide="external-link" class="w-4 h-4"></i> Demo Coming Soon
+                                    </button>
                                 </div>
                             </div>
 
@@ -276,7 +287,7 @@
                                         <li class="flex items-start gap-3 text-sm text-muted-foreground">
                                             <i data-lucide="check-circle-2"
                                                 class="w-4 h-4 text-primary mt-0.5 flex-shrink-0"></i>
-                                            OTP & OAuth secure session management
+                                            Secure Session-Based Authentication
                                         </li>
                                         <li class="flex items-start gap-3 text-sm text-muted-foreground">
                                             <i data-lucide="check-circle-2"
@@ -286,7 +297,7 @@
                                         <li class="flex items-start gap-3 text-sm text-muted-foreground">
                                             <i data-lucide="check-circle-2"
                                                 class="w-4 h-4 text-primary mt-0.5 flex-shrink-0"></i>
-                                            Real-world Payment Gateway Integration
+                                            Integrated Payment Processing Pipeline
                                         </li>
                                     </ul>
                                 </div>
@@ -295,7 +306,7 @@
                                     <p class="text-xs font-bold text-foreground uppercase tracking-[0.2em]">Architecture
                                     </p>
                                     <p class="text-sm text-muted-foreground font-medium italic text-balance">MVC Pattern
-                                        | RESTful Design | 50+ Specialized API Endpoints</p>
+                                        | RESTful Design | Specialized API Endpoints</p>
                                     <div class="flex flex-wrap gap-2 pt-2">
                                         <span
                                             class="px-3 py-1 rounded-lg text-[11px] font-bold bg-secondary text-secondary-foreground border border-border">NODE.JS</span>
@@ -304,10 +315,43 @@
                                         <span
                                             class="px-3 py-1 rounded-lg text-[11px] font-bold bg-secondary text-secondary-foreground border border-border">MONGODB</span>
                                         <span
-                                            class="px-3 py-1 rounded-lg text-[11px] font-bold bg-secondary text-secondary-foreground border border-border">JWT</span>
+                                            class="px-3 py-1 rounded-lg text-[11px] font-bold bg-secondary text-secondary-foreground border border-border">SESSIONS</span>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Engineering Challenges Solved -->
+                <div class="pt-20 space-y-10">
+                    <div class="space-y-4">
+                        <h3 class="text-2xl font-bold tracking-tight">Engineering Challenges Solved</h3>
+                        <p class="text-muted-foreground">Practical backend problems handled in an e-commerce context.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="p-6 rounded-2xl border border-border bg-background space-y-4">
+                            <h4 class="font-bold text-primary">Dynamic Variant Logic</h4>
+                            <p class="text-sm text-muted-foreground leading-relaxed">
+                                Implemented a system to manage complex product variants (size, color, material) while
+                                maintaining data integrity across inventory updates.
+                            </p>
+                        </div>
+                        <div class="p-6 rounded-2xl border border-border bg-background space-y-4">
+                            <h4 class="font-bold text-primary">State Machine for Orders</h4>
+                            <p class="text-sm text-muted-foreground leading-relaxed">
+                                Designed a robust order lifecycle management system to handle transitions between
+                                pending, paid, shipped, and returned states.
+                            </p>
+                        </div>
+                        <div class="p-6 rounded-2xl border border-border bg-background space-y-4">
+                            <h4 class="font-bold text-primary">Optimized Data Access</h4>
+                            <p class="text-sm text-muted-foreground leading-relaxed">
+                                Improved performance by refining MongoDB aggregation pipelines and indexing strategies
+                                for complex product filtering and search.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -394,6 +438,34 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Currently Expanding Expertise -->
+                <div id="learning" class="pt-20 space-y-12">
+                    <div class="space-y-4 text-center">
+                        <h2 class="text-3xl font-bold tracking-tight">Currently Expanding Expertise</h2>
+                        <p class="text-muted-foreground text-lg max-w-xl mx-auto">Active learning and roadmap for
+                            backend mastery.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div class="px-6 py-4 rounded-xl border border-border bg-card/30 flex items-center gap-4">
+                            <div class="w-2 h-2 rounded-full bg-primary"></div>
+                            <span class="text-sm font-medium">Advanced DS & Algorithms</span>
+                        </div>
+                        <div class="px-6 py-4 rounded-xl border border-border bg-card/30 flex items-center gap-4">
+                            <div class="w-2 h-2 rounded-full bg-primary"></div>
+                            <span class="text-sm font-medium">AWS Cloud Infrastructure</span>
+                        </div>
+                        <div class="px-6 py-4 rounded-xl border border-border bg-card/30 flex items-center gap-4">
+                            <div class="w-2 h-2 rounded-full bg-primary"></div>
+                            <span class="text-sm font-medium">Message Queues (RabbitMQ)</span>
+                        </div>
+                        <div class="px-6 py-4 rounded-xl border border-border bg-card/30 flex items-center gap-4">
+                            <div class="w-2 h-2 rounded-full bg-primary"></div>
+                            <span class="text-sm font-medium">Docker & Containerization</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -404,7 +476,7 @@
                     <div class="space-y-12">
                         <div class="space-y-4">
                             <h2 class="text-4xl font-bold tracking-tight">Engineering <br> Excellence</h2>
-                            <p class="text-background/60 text-lg">My non-negotiable standards for production software.
+                            <p class="text-background/60 text-lg">My foundational standards for reliable software.
                             </p>
                         </div>
 
